@@ -1,5 +1,7 @@
 # Movies-ETL
 
+## Requirements
+
 This project was written in Python 3.9 using Jupyter Notebooks.
 Postgress 11.4 and pgadmin 4 v5.7 are needed to run the code in this project.
 config.py is needed for this project. This file contains a variable dbpassword to store the database password for Postgres as a string.
@@ -30,9 +32,9 @@ Using Python, Pandas, the ETL process, and code refactoring, extract and transfo
 
 Use Python, Pandas, the ETL process, code refactoring, and PostgreSQL to add the movies_df DataFrame and MovieLens rating CSV data to a SQL database. The function is stored in [ETL_create_database.ipynb](/ETL_create_database.ipynb).
 
-## Summary
+## Usage and Confirming ETL Process Success
 
-The function created in deliverable 4 now automates the ETL process for Wikipedia and Kaggle datasets. To test if the function worked correctly, the following queries where run in pgadmin 4:
+The function created in deliverable 4 [ETL_create_database.ipynb](/ETL_create_database.ipynb) now automates the ETL process for Wikipedia and Kaggle datasets. To test if the function worked correctly, the following queries where run in pgadmin 4:
 ```
 SELECT COUNT(*) FROM movies;
 ```
